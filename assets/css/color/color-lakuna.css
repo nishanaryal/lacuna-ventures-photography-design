@@ -1,0 +1,536 @@
+:root {
+  --color-one: #0199FF;
+  --color-two: #011AFF;
+  --color-three: #ff9920;
+  --color-four: #ff0199;
+  --color-black: #000;
+  --white: #fff;
+
+  --primary-color: #0199FF;
+  --secondary-color: #011AFF;
+  --footer-bg: rgba(39, 122, 185, 0.8);
+  --search-top-bg: #ea7525;
+  --search-top-btn: #277ab9;
+
+ }
+ 
+ .gradient-bg {
+  background: var(--primary-color);
+  background: -webkit-gradient(linear, left top, right top, from(var(--primary-color)), to(var(--secondary-four)));
+  background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+}
+
+.default-button {
+  background: var(--primary-color);
+  background: -webkit-gradient(linear, left top, right top, from(var(--primary-color)), to(var(--secondary-color)));
+  background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+}
+
+.default-button:hover {
+  -webkit-box-shadow: 0 0 10px var(--primary-color);
+          box-shadow: 0 0 10px var(--primary-color);
+}
+
+.primary-button {
+  background: var(--color-three);
+  background: -webkit-gradient(linear, left top, right top, from(var(--color-three)), to(var(--color-four)));
+  background: linear-gradient(to right, var(--color-three), var(--color-four));
+}
+
+.primary-button:hover {
+  -webkit-box-shadow: 0 0 10px var(--color-four);
+          box-shadow: 0 0 10px var(--color-four);
+}
+
+
+.section-title h2::after {
+  background: var(--primary-color);
+  background: -webkit-gradient(linear, left top, right top, from(var(--primary-color)), to(var(--secondary-color)));
+  background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+}
+
+.section-title h2::before {
+  background: var(--primary-color);
+  background: -webkit-gradient(linear, left top, right top, from(var(--primary-color)), to(var(--secondary-color)));
+  background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+}
+
+/* Preloader style */
+.preloader-wrap {
+  background: #fff none repeat scroll 0 0;
+  height: 100%;
+  position: fixed;
+  width: 100%;
+  z-index: 9999;
+}
+
+.preloader-wrap .preloader {
+  left: 50%;
+  margin: -20px 0 0 -20px;
+  position: absolute;
+  top: 50%;
+}
+
+.preloader {
+  position: relative;
+  width: 65px;
+  margin: 6em auto;
+}
+
+.preloader span {
+  position: absolute;
+  display: block;
+  bottom: 0;
+  width: 9px;
+  height: 5px;
+  border-radius: 5px;
+  background: rgba(0, 0, 0, 0.1);
+  -webkit-animation: preloader 2s infinite ease-in-out;
+  animation: preloader 2s infinite ease-in-out;
+}
+
+.preloader span:nth-child(2) {
+  left: 11px;
+  -webkit-animation-delay: 200ms;
+  animation-delay: 200ms;
+}
+
+.preloader span:nth-child(3) {
+  left: 22px;
+  -webkit-animation-delay: 400ms;
+  animation-delay: 400ms;
+}
+
+.preloader span:nth-child(4) {
+  left: 33px;
+  -webkit-animation-delay: 600ms;
+  animation-delay: 600ms;
+}
+
+.preloader span:nth-child(5) {
+  left: 44px;
+  -webkit-animation-delay: 800ms;
+  animation-delay: 800ms;
+}
+
+.preloader span:nth-child(6) {
+  left: 55px;
+  -webkit-animation-delay: 1000ms;
+  animation-delay: 1000ms;
+}
+
+@-webkit-keyframes preloader {
+  0% {
+    height: 5px;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    background: rgba(0, 0, 0, 0.1);
+  }
+  25% {
+    background: var(--primary-color);
+    background: -webkit-gradient(linear, left top, right top, from(var(--primary-color)), to(var(--secondary-color)));
+    background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+    height: 30px;
+    -webkit-transform: translateY(15px);
+    transform: translateY(15px);
+  }
+  50%, 100% {
+    height: 5px;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    background: rgba(0, 0, 0, 0.1);
+  }
+}
+
+@keyframes preloader {
+  0% {
+    height: 5px;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    background: rgba(0, 0, 0, 0.1);
+  }
+  25% {
+    background: var(--primary-color);
+    background: -webkit-gradient(linear, left top, right top, from(var(--primary-color)), to(var(--secondary-color)));
+    background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+    height: 30px;
+    -webkit-transform: translateY(15px);
+    transform: translateY(15px);
+  }
+  50%,
+  100% {
+    height: 5px;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    background: rgba(0, 0, 0, 0.1);
+  }
+}
+
+/* End Preloader style */
+@media only screen and (min-width: 768px) {
+  .top-menu.menu-shrink {
+    background: var(--primary-color);
+    background: -webkit-gradient(linear, left top, right top, from(var(--primary-color)), to(var(--secondary-color)));
+    background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+  }
+}
+
+.navbar-white .navbar-nav .nav-item .nav-link:focus, .navbar-white .navbar-nav .nav-item .nav-link:hover {
+  color: var(--primary-color) !important;
+}
+
+.navbar-white .navbar-nav .nav-item .nav-link::before {
+  background: var(--primary-color);
+  background: -webkit-gradient(linear, left top, right top, from(var(--primary-color)), to(var(--secondary-color)));
+  background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+}
+
+.navbar-white .navbar-nav .nav-item .active > a, .navbar-white .navbar-nav .nav-item .active > a:focus, .navbar-white .navbar-nav .nav-item .active > a:hover {
+  color: var(--primary-color) !important;
+}
+
+.slider-item-img-bg::before {
+  background: var(--primary-color);
+  background: -webkit-gradient(linear, left top, right top, from(var(--primary-color)), to(var(--secondary-color)));
+  background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+}
+
+.item-img-bg::after {
+  background: var(--primary-color);
+  background: -webkit-gradient(linear, left top, right top, from(var(--primary-color)), to(var(--secondary-color)));
+  background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+}
+
+.homes-bg-img::after {
+  background: var(--primary-color);
+  background: -webkit-gradient(linear, left top, right top, from(var(--primary-color)), to(var(--secondary-color)));
+  background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+}
+
+.particle-bg {
+  position: relative;
+}
+
+.particle-bg::after {
+  background: var(--primary-color);
+  background: -webkit-gradient(linear, left top, right top, from(var(--primary-color)), to(var(--secondary-color)));
+  background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+}
+
+.video-bg {
+  position: relative;
+}
+
+.video-bg::after {
+  background: var(--primary-color);
+  background: -webkit-gradient(linear, left top, right top, from(var(--primary-color)), to(var(--secondary-color)));
+  background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+}
+
+.app-about-text h3::after {
+  background: var(--primary-color);
+  background: -webkit-gradient(linear, left top, right top, from(var(--primary-color)), to(var(--secondary-color)));
+  background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+}
+
+.app-about-text ul li i {
+  color: var(--primary-color);
+}
+
+.single-hiw-feature i {
+  background: var(--primary-color);
+  background: -webkit-gradient(linear, left top, right top, from(var(--primary-color)), to(var(--secondary-color)));
+  background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+}
+
+.single-hiw-feature i:hover i {
+  -webkit-box-shadow: 0 0 10px var(--primary-color);
+          box-shadow: 0 0 10px var(--primary-color);
+}
+
+.video-demo-content::before {
+  background: var(--primary-color);
+  background: -webkit-gradient(linear, left top, right top, from(var(--primary-color)), to(var(--secondary-color)));
+  background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+}
+
+.single-feature::after {
+  background: var(--color-four);
+  background: -webkit-gradient(linear, left top, right top, from(var(--color-four)), to(var(--color-three)));
+  background: linear-gradient(to right, var(--color-four), var(--color-three));
+}
+
+.single-feature .feature-icon {
+  background: var(--color-three);
+  background: -webkit-gradient(linear, left top, right top, from(var(--color-three)), to(var(--color-three)));
+  background: linear-gradient(to right, var(--color-three), var(--color-three));
+}
+
+.counter-stats::after {
+  background: var(--color-three);
+  background: -webkit-gradient(linear, left top, right top, from(#fff), to(#000));
+  background: linear-gradient(to right, var(--primary-color), #000);
+}
+
+.screenshot-item:hover .screenshot-image::before {
+  background: var(--primary-color);
+  background: -webkit-gradient(linear, left top, right top, from(var(--primary-color)), to(var(--secondary-color)));
+  background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+}
+
+.screenshots-modal .close {
+  background: var(--color-three);
+  background: -webkit-gradient(linear, left top, right top, from(var(--color-three)), to(var(--color-four)));
+  background: linear-gradient(to right, var(--color-three), var(--color-four));
+}
+
+.screenshots-modal .close:hover, .screenshots-modal .close:focus {
+  -webkit-box-shadow: 0 0 10px var(--primary-color);
+          box-shadow: 0 0 10px var(--primary-color);
+}
+
+.screenshot-details-text .title::after {
+  background: var(--primary-color);
+  background: -webkit-gradient(linear, left top, right top, from(var(--primary-color)), to(var(--secondary-color)));
+  background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+}
+
+.screenshot-details-text ul li i {
+  color: var(--primary-color);
+}
+
+.testimonial-section::after {
+  background: var(--primary-color);
+  background: -webkit-gradient(linear, left top, right top, from(var(--primary-color)), to(var(--secondary-color)));
+  background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+}
+
+.testimonial-item .icofont-quote-left {
+  background: var(--primary-color);
+  background: -webkit-gradient(linear, left top, right top, from(var(--primary-color)), to(var(--secondary-color)));
+  background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+}
+
+.testimonial-item .pic {
+  -webkit-box-shadow: 0 0 2px var(--primary-color);
+          box-shadow: 0 0 2px var(--primary-color);
+}
+
+.single-price-package .price-header .price-value {
+  background: var(--primary-color);
+  background: -webkit-gradient(linear, left top, right top, from(var(--primary-color)), to(var(--secondary-color)));
+  background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+}
+
+.purchase-btn::before {
+  background: var(--primary-color);
+  background: -webkit-gradient(linear, left top, right top, from(var(--primary-color)), to(var(--secondary-color)));
+  background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+}
+
+.personal-price-package .purchase-btn {
+  background: var(--primary-color);
+  background: -webkit-gradient(linear, left top, right top, from(var(--primary-color)), to(var(--secondary-color)));
+  background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+}
+
+.single-price-package:hover .purchase-btn {
+  background: var(--primary-color);
+  background: -webkit-gradient(linear, left top, right top, from(var(--primary-color)), to(var(--secondary-color)));
+  background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+}
+
+.faq-content .faq-title::before {
+  background: var(--primary-color);
+  background: -webkit-gradient(linear, left top, right top, from(var(--primary-color)), to(var(--secondary-color)));
+  background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+}
+
+.faq-content .faq-title.active {
+  background: var(--primary-color);
+  background: -webkit-gradient(linear, left top, right top, from(var(--primary-color)), to(var(--secondary-color)));
+  background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+}
+
+.accordion__item.active .accordion-header {
+  background: var(--primary-color);
+  background: -webkit-gradient(linear, left top, right top, from(var(--primary-color)), to(var(--secondary-color)));
+  background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+}
+
+.single-member .overlay {
+  background: var(--primary-color);
+  background: -webkit-gradient(linear, left top, right top, from(var(--primary-color)), to(var(--secondary-color)));
+  background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+}
+
+.app-download-section::after {
+  background: var(--primary-color);
+  background: -webkit-gradient(linear, left top, right top, from(var(--primary-color)), to(var(--secondary-color)));
+  background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+}
+
+.single-blog-post .blog-date {
+  background: var(--primary-color);
+  background: -webkit-gradient(linear, left top, right top, from(var(--primary-color)), to(var(--secondary-color)));
+  background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+}
+
+.single-blog-post .blog-title a:hover {
+  color: var(--primary-color);
+}
+
+.single-blog-post .post-admin a {
+  color: var(--primary-color);
+}
+
+.single-blog-post:hover .read-more-btn {
+  color: var(--primary-color);
+}
+
+.single-blog-post-two .blog-title a:hover {
+  color: var(--primary-color);
+}
+
+.single-blog-post-two .post_date {
+  background: var(--primary-color);
+  background: -webkit-gradient(linear, left top, right top, from(var(--primary-color)), to(var(--secondary-color)));
+  background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+}
+
+.single-blog-img .single-blog-date {
+  background: var(--primary-color);
+  background: -webkit-gradient(linear, left top, right top, from(var(--primary-color)), to(var(--secondary-color)));
+  background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+}
+
+.post-category .single-category:hover {
+  background: var(--primary-color);
+  background: -webkit-gradient(linear, left top, right top, from(var(--primary-color)), to(var(--secondary-color)));
+  background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+}
+
+.blog-sidebar-title::before {
+  background: var(--primary-color);
+  background: -webkit-gradient(linear, left top, right top, from(var(--primary-color)), to(var(--secondary-color)));
+  background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+}
+
+.comment-title::before {
+  background: var(--primary-color);
+  background: -webkit-gradient(linear, left top, right top, from(var(--primary-color)), to(var(--secondary-color)));
+  background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+}
+
+.popular-tags a:hover {
+  background: var(--primary-color);
+  background: -webkit-gradient(linear, left top, right top, from(var(--primary-color)), to(var(--secondary-color)));
+  background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+}
+
+.pagination-nav li a:hover {
+  background: var(--primary-color);
+  background: -webkit-gradient(linear, left top, right top, from(var(--primary-color)), to(var(--secondary-color)));
+  background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+}
+
+.pagination-nav li.active a {
+  background: var(--primary-color);
+  background: -webkit-gradient(linear, left top, right top, from(var(--primary-color)), to(var(--secondary-color)));
+  background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+}
+
+.top-banner-area::before {
+  background: var(--primary-color);
+  background: -webkit-gradient(linear, left top, right top, from(var(--primary-color)), to(var(--secondary-color)));
+  background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+}
+
+.single-contact-info i {
+  background: var(--primary-color);
+  background: -webkit-gradient(linear, left top, right top, from(var(--primary-color)), to(var(--secondary-color)));
+  background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+}
+
+.error-page-content {
+  background: var(--primary-color);
+  background: -webkit-gradient(linear, left top, right top, from(var(--primary-color)), to(var(--secondary-color)));
+  background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+}
+
+.subscribe-form .subscribe-btn {
+  background: var(--primary-color);
+  background: -webkit-gradient(linear, left top, right top, from(var(--primary-color)), to(var(--secondary-color)));
+  background: linear-gradient(to right, var(--primary-color), var(--secondary-color));
+}
+
+.single-user i {
+  color: var(--primary-color);
+}
+
+.screenshot-carousel .owl-prev i,
+.screenshot-carousel-two .owl-prev i {
+  color: var(--primary-color);
+}
+
+.screenshot-carousel .owl-next i,
+.screenshot-carousel-two .owl-next i {
+  color: var(--primary-color);
+}
+
+.owl-dots .owl-dot.active span {
+  background: var(--primary-color) !important;
+}
+
+.testimonial-carousel .owl-dots .owl-dot.active span {
+  background: var(--primary-color) !important;
+}
+
+.single-post-admin a {
+  color: var(--primary-color);
+}
+
+.post-tag-media .tag li a {
+  color: var(--primary-color);
+}
+
+.post-social-media a:hover {
+  color: var(--primary-color);
+}
+
+.search-box .search-btn {
+  color: var(--primary-color);
+}
+
+.single-recent-post h5 a:hover {
+  color: var(--primary-color);
+}
+
+.all-comments-content .comment .replay {
+  color: var(--primary-color);
+}
+
+.comment-form .form-control:hover {
+  border-bottom: 1px solid var(--primary-color);
+}
+
+.contact-form .form-control:hover {
+  border-bottom: 1px solid var(--primary-color);
+}
+
+.contact-info ul li i {
+  color: var(--primary-color);
+}
+
+.error-text .back-btn {
+  color: var(--primary-color);
+}
+
+.error-text .back-btn:hover {
+  background-color: var(--primary-color);
+}
+
+.back-top-button i {
+  color: var(--primary-color);
+}
+/*# sourceMappingURL=color-default.css.map */
